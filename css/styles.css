@@ -12,6 +12,7 @@
 --banner-background-color: #2F303A;
 --team-background-color: #F5F4FA;
 --accent-background-color: #2196F3;
+--list-project-color: #EEEEEE;
 
 /* Other */
 
@@ -37,13 +38,16 @@ body {
 }
 
 /*header*/
+.header {
+outline: 1px solid var(--list-project-color);
+}
 .header_container {
     display: flex;
     margin-left: auto;
     margin-right: auto;    
     padding: 0 15px;
     width: 1200px;    
-    outline: 2px solid tomato;
+    outline: 2px solid tomato;    
 }
 .nav {
     display: flex;
@@ -90,6 +94,14 @@ body {
 }
 .link_item {  
     color: var(--basic-text-color);
+}
+.list_img {
+    /*position: absolute;*/
+    padding-right: 10px;
+   
+    
+    
+    
 }
 
 /*Banner*/
@@ -140,13 +152,13 @@ body {
 }
 
 /* main content */
-.container {
+.main_container {
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
     padding-right: 15px;
-    padding-bottom: 94px;
+    padding-bottom: 0px;
     padding-left: 15px;
     outline: 2px solid tomato;
     width: 1200px;
@@ -172,12 +184,23 @@ body {
     color: var(--title-text-color);
 }
 .section_text { 
-    margin: 0p;   
+    margin: 0;   
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;    
 }
 /* work, team  */
+.container {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    outline: 2px solid tomato;
+    width: 1200px;
+}
 .section_title {
     margin: 0;
     margin-bottom: 50px;
@@ -191,16 +214,24 @@ body {
 .list_work {    
     display: flex;
     padding-left: 0px;
+    margin: 0;
     gap: 30px;
 }
 /* team */
-.section_team {
+.section_team {     
     background-color: var(--team-background-color);          
 }
 .list_team {    
     padding-left: 0px;
+    margin: 0;
     display: flex;
-    gap: 30px;
+    gap: 30px;    
+}
+.border_team {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team_name {
     font-weight: 500;
@@ -210,12 +241,15 @@ body {
     letter-spacing: 0.03em;    
 }
 .team_name {
-    margin-top: 30px;
+    margin-top: 26px;
     margin-bottom: 10px;
+    
+
     color: var(--title-text-color);
 }
 .team_text {    
     margin: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -271,9 +305,58 @@ background-color: var(--banner-background-color);
 
 
 /*portfolio*/
+.portfolio_container {    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+.list_portfolio_more {
+    display: flex;   
+    margin: 0;
+    padding: 0;       
+    justify-content: center;
+    gap: 8px;
+}
 
+.list_portfolio_grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 3);
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+    margin-top: 50px;   
+}
+/*.list_portfolio_grid {
+    outline: 1px solid tomato;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}*/
+
+
+.list_project {
+    /*tab-size: 0 !important; */ 
+    outline: 1px solid var(--list-project-color);
+    /*border: 1px solid var(--list-project-color);*/
+    /*flex-basis: calc(100% / 3);
+    margin-top: 10px;
+    margin-left: 10px;*/
+    
+
+}
 .button_portfolio {    
-    border-radius: 4px;    
+    border-radius: 4px; 
+    border: 0px;
+    padding: 6px 22px;
 
     font-weight: 500;
     font-size: 16px;
@@ -289,14 +372,22 @@ background-color: var(--banner-background-color);
     color: var(--secondary-text-color);
     cursor: pointer;
 }
-.portfolio_header {
+.portfolio_header {    
+    margin-top: 16px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--title-text-color);
     }
-.portfolio_text {    
+.portfolio_text {   
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 20px; 
+    margin-left: 24px;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
