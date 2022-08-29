@@ -38,6 +38,12 @@ body {
     display: block;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*header*/
 
 .header {
@@ -217,6 +223,18 @@ outline: 1px solid var(--list-project-color);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;    
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* work, team  */
 
@@ -376,7 +394,7 @@ background-color: var(--banner-background-color);
 .list_project {        
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
-    margin-left: 30px;    
+    margin-left: 30px;     
 }
 
 .button_portfolio {
@@ -400,10 +418,9 @@ background-color: var(--banner-background-color);
 }
 
 .portfolio_header {
-    margin-top: 16px;
-    margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px;
+    margin: 0;
+    padding: 20px 24px;
+    padding-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
@@ -413,17 +430,16 @@ background-color: var(--banner-background-color);
 
 .portfolio_text {
     margin: 0;
-    margin-right: 24px;
-    margin-bottom: 20px;
-    margin-left: 24px;
+    padding: 20px 24px;
+    padding-top: 0px;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;    
 }
 
-.main_title {
+.main_title {    
     border-bottom: 1px solid var(--list-project-color);
     border-right: 1px solid var(--list-project-color);
-    border-left: 1px solid var(--list-project-color);
+    border-left: 1px solid var(--list-project-color);      
 }
 
