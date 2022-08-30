@@ -21,84 +21,26 @@
     <title>portfolio</title>
   </head>
   <body>
+    <!--header-->
     <header class="header">
-      <div class="header_container">
+      <div class="container container-header">
         <nav class="nav">
           <a class="logo" href="./index.html">
-            <span class="logo_new">Web</span><span class="logo_end">Studio</span>
+            <span class="logo-new">Web</span><span class="logo-end">Studio</span>
           </a>
-          <ul class="list list_blok">
-            <li class="list_item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="list_item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="list_item"><a class="link" href="./contacts.html">Контакти</a></li>
+          <ul class="list list-blok">
+            <li class="item-header"><a class="link" href="./index.html">Студія</a></li>
+            <li class="item-header"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item-header"><a class="link" href="./contacts.html">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="list list_blok">
-          <li class="list_item">
-            <a class="link link_item" href="mailto:info@devstudio.com">
-              <svg
-                class="mail"
-                width="16"
-                height="12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z"
-                  fill="#757575"
-                />
-              </svg>
-              info@devstudio.com
-            </a>
+        <ul class="list list-blok">
+          <li class="item-header">
+            <a class="link link-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="list_item">
-            <!--<img class="list_img" src="./images/label/smartphone.png" alt="smartphone">-->
-            <a class="link link_item" href="tel:+380991111111">
-              <svg
-                class="tel"
-                width="18"
-                height="24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g filter="url(#a)">
-                  <path
-                    d="M12.5 0h-7C4.673 0 4 .673 4 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13c0-.827-.673-1.5-1.5-1.5Zm-7 1h7a.5.5 0 0 1 .5.5V12H5V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z"
-                    fill="#757575"
-                  />
-                </g>
-                <path
-                  d="M6.354 13.739a.445.445 0 0 1 0 .66.525.525 0 0 1-.708 0 .445.445 0 0 1 0-.66.525.525 0 0 1 .708 0Z"
-                  fill="#757575"
-                />
-                <defs>
-                  <filter
-                    id="a"
-                    x="0"
-                    y="0"
-                    width="18"
-                    height="24"
-                    filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
-                  >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix
-                      in="SourceAlpha"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"
-                    />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="2" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_4610" />
-                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_4610" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
-              +38 099 111 11 11
-            </a>
+          <li class="item-header">
+            <a class="link link-item" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -106,160 +48,151 @@
 
     <!-- Main -->
     <main>
-      <div class="portfolio_container">
-        <section class="section_portfolio">
+      <section class="section">
+        <div class="container">
           <h2 class="visually-hidden"></h2>
-          <ul class="list list_portfolio_more">
-            <li class="list_filter">
-              <button class="button_portfolio btn_pfolio_one" type="button">Все</button>
+          <ul class="list list-main-portfolio">
+            <li>
+              <button class="button-portfolio" type="button">Все</button>
             </li>
-            <li class="list_filter">
-              <button class="button_portfolio btn_pfolio_two" type="button">Веб-сайти</button>
+            <li>
+              <button class="button-portfolio" type="button">Веб-сайти</button>
             </li>
-            <li class="list_filter">
-              <button class="button_portfolio btn_pfolio_three" type="button">Додатки</button>
+            <li>
+              <button class="button-portfolio" type="button">Додатки</button>
             </li>
-            <li class="list_filter">
-              <button class="button_portfolio btn_pfolio_four" type="button">Дизайн</button>
+            <li>
+              <button class="button-portfolio" type="button">Дизайн</button>
             </li>
-            <li class="list_filter">
-              <button class="button_portfolio btn_pfolio_five" type="button">Маркетинг</button>
+            <li>
+              <button class="button-portfolio" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list list_portfolio_grid">
-            <li class="list_project">
+          <ul class="list list-portfolio-grid">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio1.jpg"
                 alt="portfolio1"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Технокряк</h2>
-                <p class="portfolio_text">Веб-сайт</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Технокряк</h2>
+                <p class="text-main-portfolio">Веб-сайт</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio2.jpg"
                 alt="portfolio2"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio_text">Дизайн</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Постер New Orlean vs Golden Star</h2>
+                <p class="text-main-portfolio">Дизайн</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio3.jpg"
                 alt="portfolio3"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Ресторан Seafood</h2>
-                <p class="portfolio_text">Додаток</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Ресторан Seafood</h2>
+                <p class="text-main-portfolio">Додаток</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio4.jpg"
                 alt="portfolio4"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Проєкт Prime</h2>
-                <p class="portfolio_text">Маркетинг</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Проєкт Prime</h2>
+                <p class="text-main-portfolio">Маркетинг</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio5.jpg"
                 alt="portfolio5"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Проєкт Boxes</h2>
-                <p class="portfolio_text">Додаток</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Проєкт Boxes</h2>
+                <p class="text-main-portfolio">Додаток</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio6.jpg"
                 alt="portfolio6"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Inspiration has no Borders</h2>
-                <p class="portfolio_text">Веб-сайт</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Inspiration has no Borders</h2>
+                <p class="text-main-portfolio">Веб-сайт</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio7.jpg"
                 alt="portfolio7"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Видання Limited Edition</h2>
-                <p class="portfolio_text">Дизайн</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Видання Limited Edition</h2>
+                <p class="text-main-portfolio">Дизайн</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio8.jpg"
                 alt="portfolio8"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Проект LAB</h2>
-                <p class="portfolio_text">Маркетинг</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Проект LAB</h2>
+                <p class="text-main-portfolio">Маркетинг</p>
               </div>
             </li>
-            <li class="list_project">
+            <li class="list-portfolio-project">
               <img
-                class="img"
                 src="./images/portfolio/portfolio9.jpg"
                 alt="portfolio9"
                 width="370"
                 height="294"
               />
-              <div class="main_title">
-                <h2 class="portfolio_header">Growing Business</h2>
-                <p class="portfolio_text">Додаток</p>
+              <div class="main-portfolio">
+                <h2 class="subject-main-portfolio">Growing Business</h2>
+                <p class="text-main-portfolio">Додаток</p>
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!--footer-->
     <footer class="footer">
-      <div class="footer_container">
-        <a class="logo logo_footer" href="./index.html">
-          <span class="logo_new">Web</span><span class="logo_another">Studio</span>
+      <div class="container">
+        <a class="logo" href="./index.html">
+          <span class="logo-new">Web</span><span class="logo-another">Studio</span>
         </a>
-        <address class="contact_adress">
-          <ul class="list_footer">
-            <li class="list_item list_item_inner">
+        <address class="contact-adress">
+          <ul class="list-footer">
+            <li class="item-footer">
               <a
-                class="link_second"
+                class="link-second"
                 href="https://goo.gl/maps/65kU6WbYf1NxnVQ36"
                 target="_blank"
                 rel="no opener no referrer"
@@ -267,11 +200,11 @@
                 м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
-            <li class="list_item list_item_inner">
-              <a class="link_third" href="mailto:info@example.com">info@example.com</a>
+            <li class="item-footer">
+              <a class="link-third" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="list_item list_item_inner">
-              <a class="link_third" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="item-footer">
+              <a class="link-third" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
