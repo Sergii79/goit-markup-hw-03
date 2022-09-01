@@ -54,10 +54,19 @@ ul {
     list-style: none;
 }
 
+/**
+  |============================
+  | index.html
+  |============================
+*/
+
 /*header*/
 
 .header {
-border-bottom: 1px solid var(--list-project-color);
+    max-width: 1600px;   
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--list-project-color);
 }
 
 .container {   
@@ -145,8 +154,16 @@ border-bottom: 1px solid var(--list-project-color);
 }
 
 .section-banner {   
-    padding: 200px 0;       
-    background-color: var(--banner-background-color);    
+    padding: 200px 0;    
+    max-width: 1600px;   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--banner-background-color); 
+    background-image: url(../images/element_background/banner_background.svg); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+     
 }
 
 .subject-banner {          
@@ -247,7 +264,10 @@ border-bottom: 1px solid var(--list-project-color);
 
 /* team */
 
-.section-team {     
+.section-team {  
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--team-background-color);          
 }
 
@@ -290,6 +310,9 @@ border-bottom: 1px solid var(--list-project-color);
 
 .footer {
     padding: 60px 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--banner-background-color);
 }
 
@@ -325,7 +348,13 @@ border-bottom: 1px solid var(--list-project-color);
     height: 21px;   
 }
 
-/*portfolio*/
+/**
+  |============================
+  | portfolio.html
+  |============================
+*/
+
+/*Main*/
 
 .list-main-portfolio {
     display: flex;            
